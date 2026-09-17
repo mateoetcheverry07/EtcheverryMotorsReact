@@ -1,0 +1,38 @@
+
+:root {
+    --color-bg: #111827;
+    --color-white: #ffffff;
+    --color-primary: #1f3e5a;
+    --color-accent: #e53e3e;
+    --font-heading: sans-serif;
+    --font-body: sans-serif;
+    --color-text: #4a5568;--color-text:
+    
+
+
+}
+
+body {
+    background-color: var(--color-bg);
+    margin: 0;
+    font-family: var(--font-body);
+}
+
+.modo-oscuro-btn {
+    position: fixed;
+    top: 90px; /* fuera del navbar */
+    right: 20px;
+    z-index: 1000;
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    padding: 8px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.2s ease;
+}
+
+.modo-oscuro-btn:hover {
+    background: #f1f5f9;
+}

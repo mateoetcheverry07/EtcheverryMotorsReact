@@ -1,0 +1,91 @@
+.hero {
+    position: relative; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; 
+    height: 100dvh; 
+    background-image: linear-gradient(rgba(20, 29, 42, 0.7), rgba(26, 30, 35, 0.7)), url("../../../public/img/agencia7.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-white);
+    box-sizing: border-box;
+    overflow: hidden; /* Csin scroll */
+    z-index: 1; 
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem; 
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
+}
+
+.hero-logo {
+    width: 320px;          
+    max-width: 75%;
+    margin-bottom: 5px; 
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3)); 
+}
+
+.hero h1 {
+    font-family: var(--font-heading);
+    font-size: 2.4rem;
+    color: var(--color-white);
+    margin-bottom: 0.6rem;
+    margin-top: 0; 
+}
+
+.hero p {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+    color: #e2e8f0;
+}
+
+/* boton her */
+.hero .btn-primary {
+    display: inline-block;
+    background-color: rgba(102, 105, 116, 0.26); 
+    color: #f1f1f1dc;
+    padding: 0.7rem 1.8rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-in-out;
+    margin-top: 0.5rem;
+}
+
+.hero .btn-primary:hover {
+    background-color: #dee0e26b;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 50px; 
+    }
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+    .hero p {
+        font-size: 0.95rem;
+        padding: 0 0.5rem;
+        margin-bottom: 1rem;
+    }
+    .hero-logo {
+        width: 150px;
+    }
+}

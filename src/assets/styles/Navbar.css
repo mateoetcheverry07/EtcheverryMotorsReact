@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+header {
+    background-color: rgba(18, 20, 24, 0.562); 
+    backdrop-filter: blur(12px);                 
+    -webkit-backdrop-filter: blur(12px);     
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15); 
+    
+    /* flotante y fija */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+.logo h2 {
+    color: #ffffffc4; 
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.8rem; 
+    font-style: normal;
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-links li a {
+    color: #ffffffc4; 
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-links li a:hover {
+    color: #ffffff; 
+}
+
+/* para celulares */
+@media (max-width: 768px) {
+    header {
+        position: fixed; 
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 0.4rem; 
+        text-align: center;
+        padding: 0.6rem 1rem; 
+    }
+
+    .logo h2 {
+        font-size: 1.5rem; 
+    }
+    
+    .nav-links {
+        gap: 0.8rem 1.2rem; 
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links li a {
+        font-size: 0.85rem; 
+    }
+}
