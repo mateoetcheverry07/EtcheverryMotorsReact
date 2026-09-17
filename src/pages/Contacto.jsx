@@ -10,7 +10,6 @@ function Contacto() {
             <p>Ponete en contacto con nosotros o visitanos en nuestro local exclusivo.</p>
           </div>
           
-/* tarjetas redes etc */
           <div className="redes-centradas">
             <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="contacto-card-link" title="Ubicación">
               <div className="icon-box">

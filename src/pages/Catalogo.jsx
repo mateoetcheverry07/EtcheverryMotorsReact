@@ -238,7 +238,6 @@ function Catalogo() {
           </div>
         </aside>
 
-/* principal */
         <section className="catalog-content">
           <div className="catalog-header-top">
             <h1>Autos Usados</h1>

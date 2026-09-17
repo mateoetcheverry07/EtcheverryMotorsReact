@@ -78,7 +78,6 @@
     box-shadow: 0 0 0 4px rgba(15, 23, 42, 0.1);
 }
 
-/* principal */
 .catalog-content {
     display: flex;
     flex-direction: column;
