@@ -22,7 +22,7 @@ function AppContent() {
       <Navbar />
 
       <button className="modo-oscuro-btn" onClick={toggleDarkMode}>
-{isDarkMode ? '🌙 Modo Oscuro' : '☀️ Modo Claro'}      </button>
+{isDarkMode ? '🌙 ' : '☀️'}      </button>
 
       <main>
         <Routes>
