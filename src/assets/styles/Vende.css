@@ -209,6 +209,8 @@
 
 .app-container.dark-mode .quick-form-row {
     background: rgba(30, 41, 59, 0.25);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     border-color: rgba(51, 65, 85, 0.5);
 }
 
