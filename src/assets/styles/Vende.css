@@ -86,7 +86,6 @@
     transition: all 0.2s;
 }
 
-/* girilla */
 .extended-form-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -193,9 +192,6 @@
     background-color: rgba(203, 213, 225, 0.9);
 }
 
-
-/*mopdo oscuro*/
-
 .app-container.dark-mode .vende-card {
     background-color: rgba(15, 23, 42, 0.3);
     backdrop-filter: blur(12px);
@@ -259,7 +255,6 @@
     background-color: rgba(51, 65, 85, 0.8);
     color: #ffffff;
 }
-
 
 @media (max-width: 900px) {
     .quick-form-row {

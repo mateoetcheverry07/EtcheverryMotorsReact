@@ -15,7 +15,7 @@ body {
 }
 
 
-.navbar, .card {
+.nav, .card {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); 
 }
