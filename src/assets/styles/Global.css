@@ -1,4 +1,3 @@
-
 :root {
     --color-bg: #111827;
     --color-white: #ffffff;
@@ -6,10 +5,7 @@
     --color-accent: #e53e3e;
     --font-heading: sans-serif;
     --font-body: sans-serif;
-    --color-text: #4a5568;--color-text:
-    
-
-
+    --color-text: #4a5568;
 }
 
 body {
@@ -18,9 +14,15 @@ body {
     font-family: var(--font-body);
 }
 
+
+.navbar, .card {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+}
+
 .modo-oscuro-btn {
     position: fixed;
-    top: 90px; /* fuera del navbar */
+    top: 90px; 
     right: 20px;
     z-index: 1000;
     background: #ffffff;
