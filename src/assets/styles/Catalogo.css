@@ -455,7 +455,7 @@
     color: #cbd5e1;
 }
 
-/* para celulares */
+/* para celularess */
 @media (max-width: 900px) {
     .catalogo-page {
         background-attachment: scroll;

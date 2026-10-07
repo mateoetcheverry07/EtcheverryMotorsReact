@@ -111,3 +111,19 @@
 .foto-item:hover .foto-overlay {
   bottom: 0;
 }
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 50px; 
+    }
+    .hero h1 {
+        font-size: 1.6rem;
+    }                                              
+    .hero p {
+        font-size: 0.95rem;
+        padding: 0 0.5rem;
+        margin-bottom: 1rem;
+    }
+    .hero-logo {
+        width: 150px;
+    }
+}

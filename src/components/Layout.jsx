@@ -16,7 +16,7 @@ function Layout({ children }) {
     <div className={`app-container ${isDarkMode ? 'dark-mode' : ''}`}>
       <Navbar />
       <button className="modo-oscuro-btn" onClick={toggleDarkMode}>
-        {isDarkMode ? '🌙' : '☀️'}            /*emojis o ver iconos */
+        {isDarkMode ? '🌙' : '☀️'}            
       </button>
       
       <main>

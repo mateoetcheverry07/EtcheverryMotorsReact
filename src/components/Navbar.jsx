@@ -12,7 +12,7 @@ function Navbar() {
         <ul className="nav-links">
           <li><Link to="/">Inicio</Link></li>
           <li><Link to="/catalogo">Catálogo</Link></li>
-          <li><Link to="/vende">Vende tu vehículo!</Link></li>             /*navegacion barra arriba conecciones*/
+          <li><Link to="/vende">Vende tu vehículo!</Link></li>            
           <li><Link to="/contacto">Contacto</Link></li>
           <li><Link to="/galeria">Galería</Link></li>
         </ul>
