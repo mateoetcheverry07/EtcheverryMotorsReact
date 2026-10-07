@@ -1,0 +1,113 @@
+
+.galeria-fotos-container {
+  padding: 5rem 1rem 4rem 1rem;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;             /*contenedor fotos*/
+  
+  background-image: linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.95)), url('../../../public/img/99galeriaback.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+}
+
+.galeria-fotos-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.galeria-fotos-header h2 {
+  font-size: 2.8rem;
+  color: var(--color-white, #ffffff); 
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.galeria-fotos-header p {
+  color: #cbd5e1; 
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.filtros-fotos {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-foto {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--color-white, #ffffff);
+  padding: 0.6rem 1.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+.btn-foto:hover, 
+.btn-foto.activo {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--color-bg, #111827); 
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.fotos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 2rem auto 0 auto;
+}
+
+.foto-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  aspect-ratio: 4 / 3; 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); 
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.foto-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.foto-overlay {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 1rem;
+  background: linear-gradient(to top, rgba(17, 24, 39, 0.95), transparent);
+  color: #ffffff;
+  text-align: center;
+  font-weight: 500;
+  transition: bottom 0.3s ease;
+  box-sizing: border-box;
+}
+
+.foto-item:hover img {
+  transform: scale(1.08);
+}
+
+.foto-item:hover .foto-overlay {
+  bottom: 0;
+}
